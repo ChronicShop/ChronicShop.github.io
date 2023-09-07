@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chronic Shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("leaf.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">Menu</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">Locations</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#Contact" class="w3-button w3-block w3-black">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Chronic<br>Shop</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Flower');" id="myLink">
+        <div class="w3-col s6 tablink">Flower</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Edibles');">
+        <div class="w3-col s6 tablink">Edibles</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Vapes');">
+        <div class="w3-col s6 tablink">Vapes</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Concentrates');">
+        <div class="w3-col s6 tablink">Consentrates</div>
+      </a>
+    </div>
+
+    <div id="Flower" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Biscotti</h5>
+      <p class="w3-text-grey">60/40 indica leaning hybrid is great for dealing with anxiety, depression and stress.<br>
+        <br> The flavors are diesel, honey and vanilla.
+  </p>
+
+      <h5>Blue Dream</h5>
+      <p class="w3-text-grey">60/40 sativa leaning hybrid is great for when you want to feel creative, energetic and uplifted.<br>
+      <br> The flavors are sweet berry and blueberry.
+
+      <h5>Gary Payton</h5>
+      <p class="w3-text-grey">60/40 indica leaning hybrid helps with anxiety, depression and stress.<br>
+      <br> The flavors are apricot, lavender and pepper.
+
+
+      <h5>Northern Lights</h5>
+      <p class="w3-text-grey">Indica strain great for anxiety, pain, sleep and stress.<br>
+      <br> The flavor is a spicy earthy pine taste.
+
+      <h5>Sour Diesel</h5>
+      <p class="w3-text-grey">Sativa strain that is great for daytime use when you want to feel energetic, creative and talkative.<br>
+      <br> The flavor is a skunky diesel mix.
+
+    </div>
+
+    <div id="Edibles" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Wonka Bar</h5>
+      <p class="w3-text-grey">300 mg hybrid Chocolate Bar. Comes in various flavors</p><br>
+
+      <h5>Obi's Thirsty Pup</h5>
+      <p class="w3-text-grey">250mg fruit juice made with live resin. Comes in various flavors.</p><br>
+
+      <h5>Obi's Thirsty Dog</h5>
+      <p class="w3-text-grey">500mg fruit juice made with live resin. Comes in various flavors.</p><br>
+
+    </div>
+
+
+
+  <div id="Concentrates" class="w3-container menu w3-padding-48 w3-card">
+    <h5>Blue Dream Live Resin</h5>
+    <p class="w3-text-grey">60/40 sativa leaning hybrid is great for when you want to feel creative, energetic and uplifted.<br>
+    <br> The flavors are sweet berry and blueberry.
+
+    <h5>THC Diamonds</h5>
+    <p class="w3-text-grey">99% THC concentrate</p><br>
+
+  </div>
+
+<div id="Vapes" class="w3-container menu w3-padding-48 w3-card">
+  <h5>Skittlez</h5>
+  <p class="w3-text-grey">Skittles flavored vape cart. Comes in various flavors</p><br>
+
+  <h5>Trudose Disposable</h5>
+  <p class="w3-text-grey">Live resin disposable vape pen. Comes in various flavors</p><br>
+
+  <h5>Muha Meds</h5>
+  <p class="w3-text-grey">Live resin carts. Come in various flavors.</p><br>
+</div>
+
+
+
+
+<!-- Location Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+  </div>
+</div>
+<!-- Contact Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Add font awesome icons -->
+<h5 class="w3-center w3-padding-48">
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-telegram"></a>
+    </span></h5>
+
+
+
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Created by <a href="https://www.instagram.com/kingcyanide00/" title="Cyanide" target="_blank" class="w3-hover-text-green">Cyanide</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
